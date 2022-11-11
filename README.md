@@ -9,7 +9,7 @@
 
 - 📫 How to reach me **sumitvirdisec@gmail.com**
 
-- ⚡ Fun fact **I think every time a hacker hack he should take a nap! with regards to other queries you can find me on 127.0.0.1**
+- ⚡ Fun fact **I think every time a hacker hacks, he should take a nap! with regards to other queries you can find me on 127.0.0.1**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Sumit Virdi</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">A passionate Red Teamer/Penetration tester from India</h3>
 
 - 🌱 I’m currently learning **Red Teaming**
 

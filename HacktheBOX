@@ -34,3 +34,14 @@ sumitvirdi@htb[/htb]$ vim id_rsa
 sumitvirdi@htb[/htb]$ chmod 600 id_rsa
 sumitvirdi@htb[/htb]$ ssh user@10.10.10.10 -i id_rsa
 
+to change user with NOPASSWORD 
+
+replace user2 with your desired user 
+sudo -u user2 /bin/bash
+to access file if if  have the same situation
+
+sudo -u user2 -s /bin/bash -c 'cat /path/to/flag.txt'
+
+so here i copied the id_rsa file and then logged in with the given ip and port with chmod 600 to my file id rsa
+
+ssh root@83.136.253.106 -p 32900 -i id_rsa

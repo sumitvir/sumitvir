@@ -10,3 +10,11 @@ Apache	/var/www/html/
 Nginx	/usr/local/nginx/html/
 IIS	c:\inetpub\wwwroot\
 XAMPP	C:\xampp\htdocs\
+usefull link 
+
+https://github.com/carlospolop/PEASS-ng  privilege escalation.
+https://github.com/rebootuser/LinEnum
+
+https://github.com/GhostPack/Seatbelt Seatbelt is a C# 
+project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives.
+

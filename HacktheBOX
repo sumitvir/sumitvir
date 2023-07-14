@@ -18,3 +18,19 @@ https://github.com/rebootuser/LinEnum
 https://github.com/GhostPack/Seatbelt Seatbelt is a C# 
 project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives.
 
+There are specific directories that we may be able to utilize to add new cron jobs if we have the write permissions over them. These include:
+
+/etc/crontab
+/etc/cron.d
+/var/spool/cron/crontabs/root
+If we can write to a directory called by a cron job, we can write a bash script with a reverse shell command, which should send us a reverse shell when executed.
+
+Exposed Credentials
+Next, we can look for files we can read and see if they contain any exposed credentials. This is very common with configuration files, log files, and user history files (bash_history in Linux and PSReadLine in Windows).
+
+SSH Keys
+Finally, let us discuss SSH keys. If we have read access over the .ssh directory for a specific user, we may read their private ssh keys found in /home/user/.ssh/id_rsa or /root/.ssh/id_rsa, and use it to log in to the server. If we can read the /root/.ssh/ directory and can read the id_rsa file, we can copy it to our machine and use the -i flag to log in with it:
+sumitvirdi@htb[/htb]$ vim id_rsa
+sumitvirdi@htb[/htb]$ chmod 600 id_rsa
+sumitvirdi@htb[/htb]$ ssh user@10.10.10.10 -i id_rsa
+

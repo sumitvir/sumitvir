@@ -1,0 +1,3 @@
+While connecting to the service, we noticed that the connection took longer than usual (about 15 seconds). There are some services whose connection speed, or response time, can be configured.
+Now that we know that an FTP server is running on this port, 
+we can deduce the origin of our "failed" scan. We could confirm this again by specifying the minimum probe round trip time (--min-rtt-timeout) in Nmap to 15 or 20 seconds and rerunning the scan.
